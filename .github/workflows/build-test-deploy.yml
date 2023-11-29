@@ -62,9 +62,9 @@ jobs:
         run: |
           az containerapp up \
             --name my-container-app \
-            --resource-group my-container-apps \
+            --resource-group my-container-app \
             --location centralus \
-            --environment 'my-container-apps' \
+            --environment 'my-container-app' \
             --image activeagency/github-actions:latest \
             --target-port 80 \
             --ingress external \

@@ -68,4 +68,5 @@ jobs:
             --image activeagency/github-actions:latest \
             --target-port 80 \
             --ingress external \
-            --query properties.configuration.ingress.fqdn
+            --query properties.configuration.ingress.fqdn 
+            

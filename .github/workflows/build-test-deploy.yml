@@ -62,11 +62,11 @@ jobs:
         run: |
           az containerapp up \
             --name my-container-app \
-            --resource-group my-container-app \
+            --resource-group my-container-apps \
             --location centralus \
-            --environment 'my-container-app' \
+            --environment 'my-container-apps' \
             --image activeagency/github-actions:latest \
             --target-port 80 \
             --ingress external \
             --query properties.configuration.ingress.fqdn 
-            
+
